@@ -111,7 +111,7 @@ def mainmenu(ideaarray, classifier)
 You can:
 
 
-(classify) -- CLASSIFY a message that succeeded or failed
+(train) -- TRAIN the program by classifying a message that succeeded or failed
 (idea) -- add a message-chunk IDEA to the database
 (evaluate) -- EVALUATE a message you're thinking of sending
 (quit) -- QUIT the application.
@@ -121,7 +121,7 @@ You can:
 		input = getinput("What do you want to do?")
 	end
 
-	if input == "classify"
+	if input == "train"
 		train_with_message(ideaarray, classifier)
 
 	elsif input == "idea"
